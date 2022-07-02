@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- *main  -> simulates random numbers and tags them
- *Return :0 tells compiler, program ran successfully
+ *main  -> simulates a random number and tags it
+ *depending on a condition
+ *Return :int 0 always
  */
 int main(void)
 {
