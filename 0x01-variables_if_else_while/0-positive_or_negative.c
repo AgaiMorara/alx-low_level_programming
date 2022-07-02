@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- *main  -> simulates a random number and tags it
+ *main - simulates a random number and tags it
  *depending on a condition
- *Return :int 0 always
+ *Return:int 0 always
  */
 int main(void)
 {
