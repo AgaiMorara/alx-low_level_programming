@@ -5,11 +5,10 @@
  *program should only use putchar function
  *Return: int 0 if successful
  */
-int N;
 
 int main(void)
 {
-	for (N = 97; N <= 122; N++)
+	for (int N = 97; N <= 122; N++)
 	{
 		putchar(N);
 	}
