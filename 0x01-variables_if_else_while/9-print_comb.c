@@ -13,6 +13,8 @@ int main(void)
 	for (N = 48; N < 58; N++)
 	{
 		putchar(N);
+		if (N == 57)
+			break;
 		putchar(44);
 		putchar(32);
 	}
