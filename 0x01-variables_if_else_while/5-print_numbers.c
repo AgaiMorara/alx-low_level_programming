@@ -12,7 +12,8 @@ int main(void)
 
 	for (N = 0; N < 10; N++)
 	{
-		printf("%i\n",N);
+		printf("%i",N);
 	}
+	putchar(10);
 	return (0);
 }
