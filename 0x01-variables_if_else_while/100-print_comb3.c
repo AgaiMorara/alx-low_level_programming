@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (P = 48; N < 58; N++)
 		{
-			if (P > N)
+			if (P >= N)
 			{
 				putchar(N);
 				putchar(P);
