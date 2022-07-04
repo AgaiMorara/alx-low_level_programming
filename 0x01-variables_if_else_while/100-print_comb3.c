@@ -21,7 +21,7 @@ int main(void)
 				putchar(N);
 				putchar(P);
 				if (P == 57)
-					break;
+					continue;
 				putchar(44);
 				putchar(32);
 			}
