@@ -20,9 +20,8 @@ int main(void)
 			{
 				putchar(N);
 				putchar(P);
-				if (P == 57 || N == 56)
+				if (P != 57 || N != 56)
 				{
-					continue;
 					putchar(44);
 					putchar(32);
 				}
