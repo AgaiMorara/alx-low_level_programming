@@ -20,7 +20,7 @@ int main(void)
 			{
 				putchar(N);
 				putchar(P);
-				if (N == 56 && P ==57)
+				if (N == 56 && P == 57)
 					break;
 				putchar(44);
 				putchar(32);
