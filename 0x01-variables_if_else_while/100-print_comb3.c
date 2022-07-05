@@ -14,17 +14,16 @@ int main(void)
 
 	for (N = 48; N < 58; N++)
 	{
-		for (P = 49; N < 58; N++)
+		for (P = 49; P < 58; P++)
 		{
 			if (P > N)
 			{
 				putchar(N);
 				putchar(P);
-				if (P != 57 || N != 56)
-				{
-					putchar(44);
-					putchar(32);
-				}
+				if (N == 56 && P ==57)
+					break;
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
