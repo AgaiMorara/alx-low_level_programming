@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (Q = 50; Q < 58 ; Q++)
 			{
-				if (Q > P && P> N)
+				if (Q > P && P > N)
 				{
 					putchar(N);
 					putchar(P);
