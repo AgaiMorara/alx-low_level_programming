@@ -20,15 +20,15 @@ int main(void)
 	{
 		for (P = 48; P < 58; P++)
 		{
-			putchar(N);
-			putchar(P);
-			putchar(32);
 			for (Y = 48; Y < 58; Y++)
 			{
 				for (Z = 49; Z < 48; Z++)
 				{
-					putchar(y);
-					putchar(z);
+					putchar(N);
+					putchar(P);
+					putchar(32);
+					putchar(Y);
+					putchar(Z);
 					putchar(44);
 					putchar(32);
 				}
