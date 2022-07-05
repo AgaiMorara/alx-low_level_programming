@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+/**
+ *main - program that prints 2 digit combintions
+ *program implements ascii and putchar
+ *Return: int 0 if successful
+ */
+
+int main(void)
+{
+	int N;
+
+	int P;
+
+	int y;
+
+	int z;
+
+	for (N = 48; N < 58; N++)
+	{
+		for (P = 48; P < 58; P++)
+		{
+			putchar(N);
+			putchar(P);
+			putchar(32);
+			for (y = 48; y < 58; y++)
+			{
+				for (z = 49; z < 48; z++)
+				{
+					putchar(y);
+					putchar(z);
+					putchar(44);
+					putchar(32);
+				}
+			}
+		}
+	}
+	putchar(10);
+	return (0);
+}
