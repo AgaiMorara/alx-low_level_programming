@@ -2,7 +2,7 @@
 
 /**
  *_islower - program that checks wether a character is small or capital
- *@c -character to be identified
+ *@c:character to be identified
  *Return: 1 if c is lowercase, 0 otherwise
  */
 
