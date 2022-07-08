@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *print_most_numbers - prints all digits except 2 and 4
+ *print_numbers - prints all digits
  *
  *Return: Always 0.
  */
-void print_most_numbers(void)
+void print_numbers(void)
 {
 	int i;
 
