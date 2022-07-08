@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * print_diagonal - function that prints a diagonal of length n
+ *@n: character that defines the length of the diagonal
+ *Return: Always 0
+ */
+
+void print_diagonal(int n)
+{
+	int x, y;
+
+	if (n <= 0)
+		_putchar('\n');
+
+	for (x = 0; x < n ; x++)
+	{
+		for (y = 0; y < x ; y++)
+			_putchar(' ');
+		_putchar(92);
+		_putchar('\n');
+	}
+
+}
