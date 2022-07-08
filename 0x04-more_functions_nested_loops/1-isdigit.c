@@ -8,6 +8,6 @@
 
 int _isdigit(int c)
 {
-	return (48 <= c &&  9 <= 57);
+	return (48 <= c &&  c <= 57);
 
 }
