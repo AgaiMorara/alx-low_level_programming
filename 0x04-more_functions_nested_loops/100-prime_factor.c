@@ -12,11 +12,13 @@ int main(void)
 
 	for (i = sqrt(612852475143); i >= 3; i = i - 2)
 	{
+		if (i % 2 == 0)
+			i--;
 		if (612852475143 % i == 0)
 		{
-			printf("%i\n",i);
+			printf("%i\n", i);
 			break;
 		}
 	}
-	return(0);
+	return (0);
 }
