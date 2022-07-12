@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ *puts2 - prints every second character.. (jumps characters in odd number spots
+ *
+ */
+
+void puts2(char *str);
+{
+	int strlen = 0;
+
+	while (str[strlen] != '\0')
+	{
+		_putchar(str[strlen]);
+		strlen += 2;
+	}
+	_putchar(10);
+}
