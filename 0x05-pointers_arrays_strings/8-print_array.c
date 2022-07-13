@@ -12,11 +12,13 @@ void print_array(int *a, int n)
 
 	if (n == 1)
 		printf("%d\n", a[0]);
+	else if (n < 1)
+		printf(" \n");
 	else
 	{
 		for (i = 0; i < n - 1; i++)
 			printf("%i, ", a[i]);
-		printf("%d\n",a[(n - 1)]);
+		printf("%d\n", a[(n - 1)]);
 
 	}
 }
