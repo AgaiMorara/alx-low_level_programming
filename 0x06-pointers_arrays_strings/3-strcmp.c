@@ -14,10 +14,7 @@ int _strcmp(char *s1, char *s2)
 
 	while (indicator == 0)
 	{
-		if (s1[i] > s2[i])
-			indicator = 1;
-		else if (s1[i] < s2[i])
-			indicator = -1;
+		indicator = s1[i] - s2[i];
 		if (s1[i] == '\0')
 			break;
 		i++;
