@@ -13,6 +13,8 @@ char *_strncat(char *dest, char *src, int n)
 {
 	char *dest_ptr = dest;
 
+	int j = 0;
+
 	int i = strlen(src);
 
 	dest += strlen(dest);
@@ -30,12 +32,12 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	else
 	{
-		while (i < n)
+		while (j < n)
 		{
 			*dest = *src;
 			dest++;
 			src++;
-			i++;
+			j++;
 		}
 	}
 	*dest = '\0';
