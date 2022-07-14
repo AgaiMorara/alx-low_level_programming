@@ -17,20 +17,19 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *dest_ptr = dest;
 
-	int i = strlen(src);
-
-	dest += strlen(dest);
-	for ( ; i < n; i++)
-		src[i] = '\0';
+	int i = 0;
 
 	if (dest == NULL)
 		return (src);
 
-	while (*src != src[n])
+	while (*src != '\0' && i < n)
 	{
 		*dest = *src;
 		dest++;
 		src++;
+		i++;
 	}
+	for ( ;i < n; i++)
+		dest[i] = '\0';
 	return (dest_ptr);
 }
