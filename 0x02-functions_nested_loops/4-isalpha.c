@@ -7,6 +7,6 @@
 */
 int _isalpha(int c)
 {
-	_putchar('\n')
+	_putchar('\n');
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
