@@ -6,7 +6,7 @@
  * pointed by s
  *@s: pointer to a memory area
  *@b: the constant to fill memory with
- *
+ *@n: the number of times to repeat b
  *Return: a pointer to memory area s
  */
 
