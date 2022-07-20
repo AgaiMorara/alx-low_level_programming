@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ *_pow_recursion -finds x^y except for negative numbers
+ *@x: the base of the power function
+ *@y: the power to raise x by
+ *Return: -1 if y is lower than 0, the power otherwise
+ */
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
+	return (x * _pow_recursion(x, y - 1));
+}
