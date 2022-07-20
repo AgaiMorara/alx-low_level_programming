@@ -3,6 +3,7 @@
 /**
  *_strlen_recursion - returns the lenght of a string
  *finds it through recursion
+ *@s: pointer to evaluation string
  *Return: length of a string similar to strlen
  */
 
