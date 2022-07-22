@@ -1,0 +1,31 @@
+#include "main.h"
+
+/**
+ *_sqrt_recursion -finds the natural sqaureroot of n
+ *@n:  input for the root function
+ *@r: constant aid for checker
+ *_sqrt_find - finds if natural squareroot exists
+ *Return: -1 if y does not have a natural squareroot, squareroot otherwise
+ */
+/**
+ *_sqrt_find - helper function to accomodate variable
+ *@n: input for root function
+ *@r: constant aid checker
+ *Return: -1 if y does not have a natural sqrt 0 otherwise
+ */
+int _sqrt_find(int n, int r)
+{
+
+	if ((r * r > n) || n < 0)
+		return (-1);
+	else if (n == 0)
+		return (0);
+	else if (r * r == n)
+		return (r);
+	return (_sqrt_find(n, r + 1));
+}
+
+int _sqrt_recursion(int n)
+{
+	return (_sqrt_find(n, 1));
+}
