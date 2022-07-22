@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * main -entry point
+ *@argc: size of arguments
+ *@argv: a pointer to a vector of pointers to the string arguments
+ *Return: 0 - success
+ */
+int main(int argc __attribute__((unused)),char *argv[])
+{
+
+	printf("%s\n", argv[0]);
+	return (0);
+}
