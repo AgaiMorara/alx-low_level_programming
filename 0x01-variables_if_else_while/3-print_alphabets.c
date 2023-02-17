@@ -14,7 +14,7 @@ int main(void)
 		putchar(97 + i);
 		i++;
 	}
-	i -=  25;
+	i -=  26;
 	while (i < 26)
 	{
 		putchar(65 + i);
