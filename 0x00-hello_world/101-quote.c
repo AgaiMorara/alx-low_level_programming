@@ -11,6 +11,6 @@ int main(void)
 {
 	char src[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, source, 59);
+	write(2, src, 59);
 	return (1);
 }
