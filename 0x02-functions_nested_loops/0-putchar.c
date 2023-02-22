@@ -8,7 +8,8 @@ int main(void)
 {
 	int i = 0;
 	char word[] = "_putchar";
-	while(word[i])
+
+	while (word[i])
 	{
 		_putchar(word[i]);
 		i++;
