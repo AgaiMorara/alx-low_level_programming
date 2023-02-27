@@ -1,0 +1,2 @@
+Pointers are unique to c.C gives you alot of responsibility with manipulating computer resources
+With a lot of responsibility comes lots of risk... but pointers very important concept in C... The following quiz will help evaluate my understanding. 
