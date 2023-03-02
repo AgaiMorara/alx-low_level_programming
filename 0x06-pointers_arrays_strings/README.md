@@ -1,0 +1,1 @@
+Control and knowing how the computer works.. you need to  intuitively understand pointers , bits , bytes and data structures.... ( There are two possiblities for each bit... How many different combinations can their be for 8 bits in contigous memory
