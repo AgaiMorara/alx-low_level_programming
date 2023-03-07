@@ -12,6 +12,9 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *ans = dest;
 
+	if (dest == NULL)
+		return (NULL);
+
 	while ((*dest++ = *src++) && n--)
 		;
 	return (ans);
