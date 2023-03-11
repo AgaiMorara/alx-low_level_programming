@@ -10,7 +10,7 @@
 int main(int __attribute__((unused)) argc, char __attribute__((unused))
 	 *argv[])
 {
-	int ans = 0, n = argc;
+	double ans = 0, n = argc;
 
 	if (argc == 1)
 		printf("0\n");
