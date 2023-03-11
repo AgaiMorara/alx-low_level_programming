@@ -20,7 +20,7 @@ int main(int __attribute__((unused)) argc, char __attribute__((unused))
 			if (atoi(argv[n]) == 0 && argv[n][0] != '0')
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
 			ans += atoi(argv[n]);
 		}
