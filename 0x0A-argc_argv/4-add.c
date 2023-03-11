@@ -10,7 +10,8 @@
 int main(int __attribute__((unused)) argc, char __attribute__((unused))
 	 *argv[])
 {
-	double ans = 0, n = argc;
+	long int ans = 0;
+	int n = argc;
 
 	if (argc == 1)
 		printf("0\n");
@@ -24,6 +25,6 @@ int main(int __attribute__((unused)) argc, char __attribute__((unused))
 			}
 			ans += atoi(argv[n]);
 		}
-	printf("%d\n", ans);
+	printf("%ld\n", ans);
 	return (0);
 }
