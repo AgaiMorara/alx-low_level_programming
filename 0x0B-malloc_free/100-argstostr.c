@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 			{
 				if (j >= k)
 				{
-					k += 2;
+					k += 1;
 					ans = realloc(ans, k);
 				}
 				*(ans + j) = av[l][i];
