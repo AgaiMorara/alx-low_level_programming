@@ -10,7 +10,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *ans;
-	int i = 0, j = 0, k = 1020, l = 0;
+	int i = 0, j = 0, k = 100, l = 0;
 
 	if (ac == 0 || !av)
 		return (NULL);
@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 			{
 				if (j >= k)
 				{
-					k += 1;
+					k += 53;
 					ans = realloc(ans, k);
 				}
 				*(ans + j) = av[l][i];
