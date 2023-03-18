@@ -12,18 +12,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i = 0, j = 0;
 	char *ptr;
 
-	while (*(s1 + i) != '\0')
+	while (s1 && *(s1 + i) != '\0')
 		i++;
 	ptr = malloc(sizeof(char) * (i + n + 1));
 
-	while ((*(ptr + j) = *s1++) != '\0' && ptr)
+	while (ptr && s1 && (*(ptr + j) = *s1++) != '\0')
 		j++;
-	while (n-- && s2 && ptr)
+	while (s2 && ptr && n--)
 	{
 		*(ptr + j) = *s2++;
 		j++;
 	}
-	if (*s2 != '\0')
+	if (s2 && *s2 != '\0')
 		*(ptr + j) = '\0';
 	return (ptr);
 }
