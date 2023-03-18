@@ -10,15 +10,20 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int j = size * nmemb;
+	int j = size * nmemb, i = 0;
 	void *ptr;
+	unsigned char *init;
 
 	if (nmemb == 0 || size == 0)
-		exit(0);
+		return (NULL);
 	ptr = malloc(j);
 
 	if (ptr != NULL)
-		memset(ptr, 0, j);
+	{
+		init = (unsigned char *)ptr;
+		for (i = 0; i < j; i++)
+			init[i] = (unsigned char)0;
+	}
 
 	return (ptr);
 }
