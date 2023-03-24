@@ -1,17 +1,4 @@
 #include "variadic_functions.h"
-
-/**
- *_putchar - writes char to stdout
- *@c: character to write
- *Return: number of chars
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-
-
 /**
  * print_number - prints an integer;
  *@n: number to print
