@@ -18,6 +18,8 @@ int _putchar(char c)
  */
 void print_string(char *string)
 {
+	if (!string)
+		string = "(nil)";
 	while (*string != '\0')
 	{
 		_putchar(*string);
