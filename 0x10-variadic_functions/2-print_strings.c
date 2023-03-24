@@ -35,6 +35,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list st;
+	const char *trav;
 
 	va_start(st, n);
 
@@ -42,11 +43,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		print_string(va_arg(st, char *));
 		if (separator)
-			while (*separator != '\0')
+		{
+			trav = separator;
+			while (*trav != '\0' && i != n - 1)
 			{
-				_putchar(*separator);
-				separator++;
+				_putchar(*trav);
+				trav++;
 			}
+		}
 	}
 	_putchar (10);
 
