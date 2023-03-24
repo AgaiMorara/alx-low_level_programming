@@ -1,9 +1,7 @@
 #include "variadic_functions.h"
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/**
+ *print_string - prints a string
+ */
 void print_string(char *string)
 {
 	if (!string)
@@ -14,6 +12,13 @@ void print_string(char *string)
 		string++;
 	}
 }
+
+/**
+ *print_strings - prints an array of strings
+ *@separator: delim
+ *@n : number of strings
+ */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
