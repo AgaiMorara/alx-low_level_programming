@@ -12,7 +12,9 @@ int (*get_op_func(char *s))(int a, int b)
 };
 	int i = 0;
 
-	while (ops[i].op != s || ops[i].f != NULL)
+	while (strcmp(ops[i].op, s) != 0 || ops[i].f != NULL)
 		i++;
-	return (ops[i].f);
+	if (ops[i - 1].op)
+		return (ops[i - 1].f);
+	return (NULL);
 }
