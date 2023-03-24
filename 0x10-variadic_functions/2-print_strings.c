@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 /**
  *print_string - prints a string
+ *@string: string to be printed
  */
 void print_string(char *string)
 {
