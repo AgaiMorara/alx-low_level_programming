@@ -2,7 +2,7 @@
 
 /**
  *op-add - returns sum of two ints
- *@A: first int
+ *@a: first int
  *@b: second int
  *Return: sum
  */

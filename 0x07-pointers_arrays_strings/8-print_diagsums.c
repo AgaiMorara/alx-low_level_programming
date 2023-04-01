@@ -7,14 +7,15 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum1 = a[0], sum2 = a[size - 1], h;
-	int revindex, index, i;
+	long int sum1 = a[0], sum2 = a[size - 1], h;
+	long int revindex, index, i;
+
 	for (i = 1, h = 2; i <= size; i++, h++)
 	{
-		index = i * (size - 1) + h;
-		revindex = i * (size - 1) - h;
+		index = ((i * size) + h) - 1;
+		revindex = (h * size) - i;
 		sum1 += a[index];
 		sum2+= a[revindex];
 	}
-	printf("%d , %d\n", sum1, sum2);
+	printf("%ld , %ld\n", sum1, sum2);
 }

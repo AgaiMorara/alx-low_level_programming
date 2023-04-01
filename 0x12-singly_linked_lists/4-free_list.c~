@@ -1,0 +1,22 @@
+#include "lists.h"
+#include <string.h>
+
+/**
+ *free_list - frees a list_t list
+ */
+
+void free_list(list_t *head)
+{
+	list_t *forfree = head;
+	while (head)
+	{
+		while(forfree->next != NULL)
+		{
+			forfree = forfree->next;
+		}
+		free (forfree->str);
+		free (forfree);
+		forfree = head;
+		head = forfree;
+	}
+}
