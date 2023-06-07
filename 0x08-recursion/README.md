@@ -1,0 +1,1 @@
+Recursion can be a powerful technique for solving certain types of problems, but it requires careful consideration of base cases, termination conditions, and resource usage to avoid potential pitfalls like infinite recursion or excessive stack usage
