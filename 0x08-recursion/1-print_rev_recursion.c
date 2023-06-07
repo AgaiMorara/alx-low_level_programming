@@ -1,23 +1,16 @@
 #include "main.h"
-#include <unistd.h>
-#include <string.h>
 
 /**
- *_puts_recursion - prints a string, followed by a new line
- *@s: pointer to the string
+ *_print_rev_recursion - prints a string in reverse
+ *@s: string
  */
 
-void _print_rev__recursion(char *s)
+void _print_rev_recursion(char *s)
 {
-	int i = strlen(s);
-	if  (i <= 0)
-	{
-		_putchar(10);
-		return;
-	}
 
-	write(1, s + i, 1);
-	s++;
-	i--;
-	_puts_recursion(s + 1);
+	if (*(s) != '\0')
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }
