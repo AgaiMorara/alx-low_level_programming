@@ -1,0 +1,1 @@
+Structs help customize containers of whatever datatype we wish to have..
