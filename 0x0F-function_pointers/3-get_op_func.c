@@ -1,20 +1,26 @@
 #include "3-calc.h"
+
 /**
- *get_op_func - selects the correct function to perform the operation asked
- *@s: operation
- *Return: result
+ *get_op_func - selects the correct function to perform the operation 
+ *
  */
 
-int (*get_op_func(char *s))(int a, int b)
-{
-	op_t ops[] = {{"+", op_add},{"-", op_sub},{"*", op_mul},{"/", op_div},
-		      {"%", op_mod},{NULL, NULL}
+op_t ops[] = {
+	{"+", op_add},
+	{"-", op_sub},
+	{"*", op_mul},
+	{"/", op_div},
+	{"%", op_mod},
+	{NULL, NULL}
 };
+int (*get_op_func(char *s))(int, int)
+{
 	int i = 0;
-
-	while (strcmp(ops[i].op, s) != 0 || ops[i].f != NULL)
+	while (ops[i].op != NULL)
+	{
+		if (strcmp(ops[i].op, s) == 0)
+			return ops[i].f;
 		i++;
-	if (ops[i - 1].op)
-		return (ops[i - 1].f);
+	}
 	return (NULL);
 }
