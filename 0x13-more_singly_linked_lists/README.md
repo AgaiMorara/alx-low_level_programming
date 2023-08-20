@@ -1,0 +1,3 @@
+Consolidation of these Data structure: Singly linked lists...
+Will focus on the speed with which I could accomplish the tasks , memory mana
+gement and accuracy
