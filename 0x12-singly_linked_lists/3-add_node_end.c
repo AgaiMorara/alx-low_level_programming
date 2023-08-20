@@ -13,21 +13,24 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *tracker = *head;
 	list_t *end = malloc(sizeof(list_t));
 
-	if (end == NULL)
+	if (!end)
 	{
 		free(end);
 		return (NULL);
 	}
 	end->str = strdup(str);
 	if (!end->str)
+	{
 		free(end->str);
+		return (NULL);
+	}
 	end->len = strlen(end->str);
 	end->next = NULL;
 
 	if (tracker == NULL)
 	{
 		*head = end;
-		return (head);
+		return (*head);
 	}
 
 	while (tracker->next != NULL)
