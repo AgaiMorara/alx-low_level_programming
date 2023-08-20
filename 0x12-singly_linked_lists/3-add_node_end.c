@@ -15,13 +15,12 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (!end)
 	{
-		free(end);
 		return (NULL);
 	}
 	end->str = strdup(str);
 	if (!end->str)
 	{
-		free(end->str);
+		free(end);
 		return (NULL);
 	}
 	end->len = strlen(end->str);
