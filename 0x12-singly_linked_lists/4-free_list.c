@@ -3,12 +3,12 @@
 
 /**
  *free_list - frees a list_t list
+ *@head: pointer to list
  */
 
 void free_list(list_t *head)
 {
-	list_t *forfree = head;
-	if (forfree)
+	if (head)
 	{
 		if (head->next != NULL)
 			free_list(head->next);
