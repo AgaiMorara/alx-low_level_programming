@@ -2,6 +2,7 @@
 #define POINTER_FILE
 
 #include <stdio.h>
+#include <limits.h>
 
 int _putchar(int c);
 char *_strcat(char *dest, char *src);
