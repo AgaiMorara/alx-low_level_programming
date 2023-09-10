@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_sqr            - returns the natural square root of a number if one exists
+ *_sqr- returns the natural square root of a number if one exists
  *@n:  number
  *@a: checker
  *Return: -1 if no natural squareroot is available
