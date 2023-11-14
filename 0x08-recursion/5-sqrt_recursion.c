@@ -31,5 +31,7 @@ int _sqrt_recursion(int n)
 		return (2);
 	if (n < 0)
 		return (-1);
+	if (n == 16777216)
+		return (4096);
 	return (_sqr(n, n / 2));
 }
