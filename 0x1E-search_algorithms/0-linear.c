@@ -11,14 +11,17 @@
  */
 int linear_search(int  *array, size_t size, int value)
 {
-  int ans = 0;
-  while (size --)
-    {
-      printf("Value Checked index [%d] = [%d]", ans, array[ans]);
-      printf("\n");
-      if  (value ==   array[ans] )
-	   return (ans);
-      ans++;
-    }
-  return (-1);
+	int ans = 0;
+
+	if (size == 0 || !array)
+		return (-1);
+
+	while (size --)
+	{
+		printf("Value Checked index [%d] = [%d]\n", ans, array[ans]);
+		if  (value ==   array[ans] )
+			return (ans);
+		ans++;
+	}
+	return (-1);
 }
