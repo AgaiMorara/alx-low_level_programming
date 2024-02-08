@@ -5,7 +5,7 @@
  *@array: array with the values from which to perfom search
  *@size: Length of the array
  *@value: value to find location for
- *Return: Index of the array or -1 if value is not present in array or NULL array
+ *Return: Index of the array or -1 if value is not present in array or NULL
  */
 int linear_search(int *array, size_t size, int value)
 {
